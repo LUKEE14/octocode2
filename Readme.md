@@ -2,6 +2,3 @@
 
 pushing local repo
 
-## hhhhhh
-
-tuyghjkjbkjbkjkln
