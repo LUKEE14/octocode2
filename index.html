@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-commerce Platform</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our E-commerce Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Product listing -->
+        <section class="product-listing">
+            <div class="product-card">
+                <img src="https://w7.pngwing.com/pngs/439/318/png-transparent-white-pantene-pro-v-shampoo-bottle-shampoo-pantene-hair-conditioner-drugstore-shampoo-miscellaneous-perfume-hair-thumbnail.png"
+                    alt="Product 1">
+                <h2>Shampoo</h2>
+                <p>$10</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$15</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <!-- More products here -->
+        </section>
+
+        <!-- Shopping cart -->
+        <section class="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items here -->
+            </div>
+            <p>Total: $<span id="total-amount">0</span></p>
+        </section>
+
+        <!-- User account -->
+        <section class="user-account">
+            <!-- Account details here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>e commerce </p>
+        <p>hello</p>
+        <p>&copy; 2023 E-commerce Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
